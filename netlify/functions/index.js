@@ -11,7 +11,7 @@ exports.handler = async event => {
     await connection;
 
     const newPet = await PetModel.create(JSON.parse(event.body));
-    console.log("saved to db: ", newPet);
+    console.log("Saved to db: ", newPet);
     return {
         statusCode: 201,
         body: JSON.stringify(newPet),

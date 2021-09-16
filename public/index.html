@@ -11,7 +11,22 @@
     <main>
         <section>
             <span class="heading">Find Fido</span>
+            <div class="report-buttons">
+                <button id="report-lost-pet">Report a Lost Pet</button>
+                <button id="report-found-pet">Report a Found Pet</button>
+            </div>
         </section>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reportLostPet = document.getElementById("report-lost-pet");
+            const reportFoundPet = document.getElementById("report-found-pet");
+
+            reportLostPet.addEventListener("click", async () => {
+                const response = await fetch('/.netlify/functions/index.js')
+            })
+        });
+    </script>
 </body>
 </html>
