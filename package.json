@@ -1,0 +1,27 @@
+{
+  "name": "Lost-Pet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "netlify dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwintersteen/Lost-Pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwintersteen/Lost-Pet/issues"
+  },
+  "homepage": "https://github.com/rwintersteen/Lost-Pet#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "mongoose": "^6.0.6",
+    "morgan": "^1.10.0",
+    "serverless-http": "^2.7.0"
+  }
+}
